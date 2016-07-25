@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/register_tab" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <RadioButton android:textSize="@dimen/local_main_textsize" android:textColor="@drawable/btn_tabcolor_selector" android:gravity="center" android:id="@id/reg_byemail" android:tag="radio_button0" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="邮箱注册" android:layout_weight="1.0" />
+        <RadioButton android:textSize="@dimen/local_main_textsize" android:textColor="#ff37c1eb" android:gravity="center" android:paddingLeft="0.0dip" android:clickable="false" android:layout_width="2.0dip" android:layout_height="fill_parent" android:button="@null" android:text="|" />
+        <RadioButton android:textSize="@dimen/local_main_textsize" android:textColor="@drawable/btn_tabcolor_selector" android:gravity="center" android:id="@id/reg_bymobile" android:tag="radio_button1" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="手机号注册" android:layout_weight="1.0" />
+        <RadioButton android:textSize="@dimen/local_main_textsize" android:textColor="#ff37c1eb" android:gravity="center" android:paddingLeft="0.0dip" android:clickable="false" android:layout_width="2.0dip" android:layout_height="fill_parent" android:button="@null" android:text="|" />
+        <RadioButton android:textSize="@dimen/local_main_textsize" android:textColor="@drawable/btn_tabcolor_selector" android:gravity="center" android:id="@id/reg_byuser" android:tag="radio_button2" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" android:text="用户名注册" android:layout_weight="1.0" />
+    </RadioGroup>
+    <RelativeLayout android:id="@id/register_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/register_tab" />
+</RelativeLayout>

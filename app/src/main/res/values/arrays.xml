@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="desk_lyric_front_color_value">
+        <item>0xffff3467</item>
+        <item>0xffff9b03</item>
+        <item>0xff34a0f0</item>
+        <item>0xff33ff99</item>
+        <item>0xffb400e8</item>
+    </integer-array>
+    <integer-array name="desklyr_text_size_default_value">
+        <item>45</item>
+        <item>55</item>
+        <item>65</item>
+    </integer-array>
+</resources>

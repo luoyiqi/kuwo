@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/btn_login_selector" android:layout_width="@dimen/griditem_layout_width" android:layout_height="@dimen/griditem_layout_width">
+        <ImageView android:id="@id/quku_item_img" android:layout_width="@dimen/griditem_layout_width" android:layout_height="@dimen/griditem_layout_width" android:src="@drawable/mv_defualt" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/quku_item_tag" android:visibility="visible" android:layout_width="@dimen/griditem_quality_width" android:layout_height="@dimen/griditem_quality_width" android:src="@drawable/mv_hq" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/quku_item_title" android:layout_width="@dimen/griditem_layout_width" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/quku_item_des" android:layout_width="@dimen/griditem_layout_width" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

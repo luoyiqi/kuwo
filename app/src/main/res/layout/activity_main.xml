@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_skin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/lyricbk" android:background="@drawable/artist_default_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/topbar" />
+        <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <include layout="@layout/playcontrol" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/local_main_textsize" android:gravity="center_vertical" android:id="@id/loadingtip" android:background="#88000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/playctlbar_height" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/leftsearchpanel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <include layout="@layout/left_column" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/main_framelayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

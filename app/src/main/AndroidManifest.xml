@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest package="cn.kuwo.kwmusiccar"
+          platformBuildVersionCode="21"
+          platformBuildVersionName="5.0.1-1624448"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name="cn.kuwo.kwmusiccar.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true">
+        <meta-data
+            android:name="src"
+            android:value="sibichi"/>
+        <meta-data
+            android:name="check_key"
+            android:value="false"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5344ee0a56240b06f7025783"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="sibichi"/>
+
+        <service
+            android:name="cn.kuwo.service.MainService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.kuwo.service.MainService"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.kuwo.base.util.NetworkStateUtil"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.kuwo.kwmusiccar.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.kuwo.kwmusiccar.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="cn.kuwo.kwmusiccar.NoSDCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="cn.kuwo.kwmusiccar.WelcomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="cn.kuwo.kwmusicauto.action.STARTAPP"/>
+                <action android:name="cn.kuwo.kwmusicauto.action.PLAY_MUSIC"/>
+                <action android:name="cn.kuwo.kwmusicauto.action.SEARCH_MUSIC"/>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label=" 酷我音乐（推荐）">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="audio/ape"/>
+                <data android:mimeType="audio/flac"/>
+                <data android:mimeType="audio/wma"/>
+                <data android:mimeType="application/ogg"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.kuwo.kwmusiccar.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="cn.kuwo.ui.lockscreen.LockScreenActivity"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"/>
+        <activity
+            android:name="cn.kuwo.ui.skin.CropImageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.tencent.plus.ImageActivity"/>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100243533"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.kuwo.base.uilib.BrowserActivity"/>
+        <activity
+            android:name="cn.kuwo.ui.topbar.VoiceSearchActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.PachiraTheme"/>
+        <activity
+            android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity
+            android:name="cn.kuwo.kwmusiccar.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"/>
+
+        <service
+            android:name="cn.kuwo.mod.push.PushService"
+            android:exported="true">
+            <intent-filter android:priority="80000">
+                <action android:name="cn.kuwo.mode.push.PushService"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.kuwo.mod.push.PushRepeatingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.ANY_DATA_STATE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.kuwo.mod.playcontrol.HeadsetControlReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="cn.kuwo.player.imcs.action.MUSIC_CONTROL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.kuwo.ui.desktopwidget.SmallTclAppWidgetProvider"
+            android:label="酷我音乐(小)">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="cn.kuwo.playercar.INIT_START"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_tcl_small_provider"/>
+        </receiver>
+        <receiver
+            android:name="cn.kuwo.ui.desktopwidget.LargeTclAppWidgetProvider"
+            android:label="酷我音乐(大)">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="cn.kuwo.playercar.INIT_START"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_tcl_large_provider"/>
+        </receiver>
+        <receiver
+            android:name="cn.kuwo.ui.desktopwidget.MiddleTclAppWidgetProvider"
+            android:label="酷我音乐(中)">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+                <action android:name="cn.kuwo.playercar.INIT_START"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@layout/widget_tcl_middle_provider"/>
+        </receiver>
+        <receiver
+            android:name="cn.kuwo.ui.desktopwidget.WidgetReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="cn.kuwo.playercar.TOGGLE_PAUSE"/>
+                <action android:name="cn.kuwo.playercar.NEXT"/>
+                <action android:name="cn.kuwo.playercar.PREV"/>
+                <action android:name="cn.kuwo.playercar.CHANGE_MODE"/>
+                <action android:name="cn.kuwo.playercar.INIT_FINISHED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+    </application>
+</manifest>

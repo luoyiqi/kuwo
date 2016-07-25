@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.kuwo.ui.pullrefresh.PullToRefreshListView android:id="@id/list_recommend" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:listSelector="@drawable/list_selector" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:divider="@null" ptr:pullmode="pullUpFromBottom"
+      xmlns:ptr="http://schemas.android.com/apk/res/cn.kuwo.kwmusiccar" />
+</LinearLayout>

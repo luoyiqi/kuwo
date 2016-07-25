@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/editor_button" android:background="@drawable/btn_login_selector" android:padding="@dimen/detail_editbutton_text_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/detail_editbutton_gridright_padding" android:layout_marginBottom="@dimen/detail_editbutton_bottom_padding" android:text="编辑" android:layout_alignParentRight="true" />
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/grid_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="@dimen/gridview_verticalspacing" android:stretchMode="columnWidth" android:numColumns="@integer/gridview_columns" android:layout_below="@id/editor_button" />
+    <include android:visibility="gone" android:layout_alignTop="@id/grid_view" layout="@layout/empty_list" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_line_control" android:background="#ffededed" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_linecontrol" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="允许线控" android:layout_centerVertical="true" />
+        <cn.kuwo.base.util.SlipButton android:id="@id/linecontrol_splitbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="150.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/tv_linecontrol" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_web" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_wab_setting" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="允许使用3G网络" android:layout_centerVertical="true" />
+        <cn.kuwo.base.util.SlipButton android:id="@id/splitbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="150.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/tv_wab_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="播放音质" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="缓存音质" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

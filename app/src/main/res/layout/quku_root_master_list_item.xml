@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/quku_root_master_item_icon" android:layout_width="@dimen/quku_class_icon_width_heght" android:layout_height="@dimen/quku_class_icon_width_heght" android:src="@drawable/icon_top" />
+        <TextView android:textSize="@dimen/quku_class_title_size" android:textColor="@color/white" android:gravity="top|center" android:layout_gravity="top|center" android:id="@id/quku_root_master_item_title" android:paddingLeft="@dimen/quku_rootmaster_item_padding" android:paddingRight="@dimen/quku_rootmaster_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:text="test" />
+    </LinearLayout>
+</LinearLayout>

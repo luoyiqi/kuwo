@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minWidth="@dimen/dialog_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+        <ScrollView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_search_songname" android:padding="5.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dialog_content_textsize" android:id="@id/iv_search_songname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_songname" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/dialog_content_textsize" android:id="@id/et_search_songname" android:paddingRight="37.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_search_songname" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/iv_songname_clear" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/close" android:layout_alignTop="@id/et_search_songname" android:layout_alignRight="@id/et_search_songname" android:layout_alignBottom="@id/et_search_songname" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_search_singer" android:padding="5.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_below="@id/rl_search_songname">
+                    <TextView android:textSize="@dimen/dialog_content_textsize" android:id="@id/iv_search_singer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_singer" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/dialog_content_textsize" android:id="@id/et_search_singer" android:paddingRight="37.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_search_singer" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/iv_singer_clear" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/close" android:layout_alignTop="@id/et_search_singer" android:layout_alignRight="@id/et_search_singer" android:layout_alignBottom="@id/et_search_singer" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dialog_content_textsize" android:gravity="center_horizontal" android:id="@id/tv_dialog_search_tips" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/search_alert_tips" />
+</LinearLayout>

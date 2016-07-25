@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/login_view" android:visibility="gone" layout="@layout/sub_fragment_userinfo" />
+        <LinearLayout android:orientation="vertical" android:id="@id/master_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/tag_image_bg" android:background="@drawable/img_bg_selector" android:layout_width="@dimen/master_layout_width" android:layout_height="@dimen/master_layout_width">
+                <ImageView android:id="@id/tag_image" android:layout_width="@dimen/master_icon_width" android:layout_height="@dimen/master_icon_width" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+            <RadioGroup android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/master_group" android:layout_width="@dimen/master_layout_width" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

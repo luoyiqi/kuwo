@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/skin_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:uilib="http://schemas.android.com/apk/res/cn.kuwo.kwmusiccar">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_skin_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/rl_skin_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tv_addmore_skin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多皮肤" android:shadowColor="#77000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerHorizontal="true" />
+            <cn.kuwo.base.uilib.KwImageView android:id="@id/iv_skin_add" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_addmore_skin" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <cn.kuwo.base.uilib.KwImageView android:id="@id/iv_skin_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <cn.kuwo.base.uilib.KwImageView android:id="@id/tv_skin_tip" android:layout_width="48.0dip" android:layout_height="36.0dip" android:layout_alignLeft="@id/iv_skin_item" android:layout_alignTop="@id/iv_skin_item" uilib:bkimage="delskin" />
+        <cn.kuwo.base.uilib.KwImageView android:id="@id/iv_skin_choice" android:layout_width="48.0dip" android:layout_height="36.0dip" android:layout_alignRight="@id/iv_skin_item" android:layout_alignBottom="@id/iv_skin_item" uilib:bkimage="current_skin" />
+    </RelativeLayout>
+</LinearLayout>

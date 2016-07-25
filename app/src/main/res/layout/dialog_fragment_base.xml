@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/dialog_fragment_header" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_content" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_below="@id/top">
+        <include layout="@layout/dialog_fragment_content" />
+        <CheckBox android:textSize="@dimen/local_main_textsize" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/cb_not_show" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="5.0dip" android:checked="false" android:button="@drawable/checkbox_style" android:text="下次不再提醒" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/buttom" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_below="@id/dialog_content">
+        <include layout="@layout/dialog_fragment_button" />
+    </LinearLayout>
+</RelativeLayout>

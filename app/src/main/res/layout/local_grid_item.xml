@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/grid_bg" android:background="@drawable/btn_login_selector" android:layout_width="@dimen/griditem_layout_width" android:layout_height="@dimen/griditem_layout_width">
+        <ImageView android:id="@id/grid_image" android:layout_width="@dimen/griditem_icon_width" android:layout_height="@dimen/griditem_icon_width" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/list_delete" android:visibility="gone" android:layout_width="@dimen/griditem_edit_width" android:layout_height="@dimen/griditem_edit_width" android:src="@drawable/delete" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/list_rename" android:visibility="gone" android:layout_width="@dimen/griditem_edit_width" android:layout_height="@dimen/griditem_edit_width" android:src="@drawable/rename" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abc" android:maxLines="1" android:singleLine="true" />
+    <TextView android:textSize="@dimen/local_sub_textsize" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/list_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abc" android:singleLine="true" />
+</LinearLayout>

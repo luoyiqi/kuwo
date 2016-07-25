@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fadingEdge="none" android:alwaysDrawnWithCache="false" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/img_layout" android:layout_width="60.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/down_icon" android:background="@drawable/notify_icon_big" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/down_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/down_percentage" android:layout_toRightOf="@id/img_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0sp" android:id="@id/down_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+        <ProgressBar android:id="@id/down_progress_bar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="1000" android:progress="500" android:progressDrawable="@drawable/progress_horizontal" android:layout_below="@id/down_name" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="12.0sp" android:id="@id/down_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/down_progress_bar" style="@android:style/TextAppearance.StatusBar.EventContent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/down_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="点击查看" android:layout_toRightOf="@id/down_state" android:layout_alignBottom="@id/down_state" />
+    </RelativeLayout>
+    <TextView android:id="@id/down_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="50%" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

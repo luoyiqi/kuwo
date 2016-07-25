@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dialog_content_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_content_height" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_stop_sleep" android:background="#ffededed" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="40.0dip">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/tv_stopplay_sleep" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_stopplay_sleep" android:layout_toLeftOf="@id/sb_sleep_splitbutton" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <ToggleButton android:id="@id/sb_sleep_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RadioGroup android:id="@id/rg_choiceminsleep" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/rb_self_define_sleep" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="40.0dip" android:text="@string/setting_self_define_sleep" android:drawableRight="@drawable/radio_button_selector" />
+                <RadioButton android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/rb_tenmin_sleep" android:background="#ffededed" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="40.0dip" android:text="@string/setting_tenmin_sleep" android:drawableRight="@drawable/radio_button_selector" />
+                <RadioButton android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/rb_thirtymin_sleep" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="40.0dip" android:text="@string/setting_thirtymin_sleep" android:drawableRight="@drawable/radio_button_selector" />
+                <RadioButton android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/rb_sixtymin_sleep" android:background="#ffededed" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="40.0dip" android:text="@string/setting_sixtymin_sleep" android:drawableRight="@drawable/radio_button_selector" />
+                <RadioButton android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/rb_ninetymin_sleep" android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:minHeight="40.0dip" android:text="@string/setting_ninetymin_sleep" android:drawableRight="@drawable/radio_button_selector" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rl_button_sleep" android:background="#ffff0000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/tv_line_sleep" android:background="#ff0eb5fb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttonGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_line_sleep">
+            <ImageView android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" />
+            <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/bt_yes_sleep" android:background="#fff7f4f4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="停止播放" android:layout_weight="1.0" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" />
+            <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/bt_yes_sleep_exit" android:background="#fff7f4f4" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="退出应用" android:layout_weight="1.0" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" />
+        </LinearLayout>
+        <TextView android:background="#ff0eb5fb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/buttonGroup" />
+    </RelativeLayout>
+</RelativeLayout>

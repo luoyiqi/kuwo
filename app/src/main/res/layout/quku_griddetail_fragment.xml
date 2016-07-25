@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.kuwo.ui.pullrefresh.PullToRefreshGridView android:gravity="center" android:layout_gravity="center" android:id="@id/pulltorefresh_gridview" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="@dimen/gridview_verticalspacing" android:stretchMode="columnWidth" android:numColumns="@integer/gridview_columns" android:layout_below="@id/editor_button" ptr:pullmode="pullUpFromBottom"
+      xmlns:ptr="http://schemas.android.com/apk/res/cn.kuwo.kwmusiccar" />
+</RelativeLayout>

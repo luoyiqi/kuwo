@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/register_image_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/local_login_tab_bg" android:scaleType="matrix" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="3.0">
+                <TextView android:textSize="17.0sp" android:textColor="@color/local_login_light_black" android:gravity="center" android:id="@id/local_register_tv_mail" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="邮箱" android:layout_weight="1.0" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/local_register_tv_phone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="手机号" android:layout_weight="1.0" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/local_login_light_black" android:gravity="center" android:id="@id/local_register_tv_account" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="用户名" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" android:layout_below="@id/tab_layout" />
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" android:layout_below="@id/line" />
+    </RelativeLayout>
+</LinearLayout>

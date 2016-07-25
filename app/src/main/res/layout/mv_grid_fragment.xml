@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/empty_list" />
+    <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:layout_gravity="right" android:id="@id/mv_edit" android:background="@drawable/btn_login_selector" android:padding="@dimen/detail_editbutton_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/detail_editbutton_gridright_padding" android:layout_marginBottom="@dimen/detail_editbutton_bottom_padding" android:text="编辑" />
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/mv_grid" android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="@dimen/gridview_verticalspacing" android:stretchMode="columnWidth" android:numColumns="@integer/mv_columns" />
+</LinearLayout>

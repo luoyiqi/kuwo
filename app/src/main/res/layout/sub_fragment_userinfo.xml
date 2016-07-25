@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/local_islogin_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/img_bg_selector" android:layout_width="@dimen/master_layout_width" android:layout_height="@dimen/master_layout_width">
+            <ImageView android:id="@id/img_user_islogin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:id="@id/local_root_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="@dimen/username_text_maxwidth" android:text="" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/local_root_level_img" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/local_root_username" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff60aeee" android:id="@id/local_root_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:text="" android:layout_toRightOf="@id/local_root_level_img" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/local_root_vip" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/local_root_level" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/local_sub_textsize" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/local_sysn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_out" android:background="@drawable/btn_login_selector" android:padding="@dimen/detail_editbutton_text_padding" android:layout_width="@dimen/master_layout_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="注销" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/local_unlogin_status" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/img_bg_selector" android:layout_width="@dimen/master_layout_width" android:layout_height="@dimen/master_layout_width">
+            <ImageView android:id="@id/img_user_unlogin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/unlogin_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="游客" />
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_register" android:background="@drawable/btn_login_selector" android:padding="@dimen/detail_editbutton_text_padding" android:layout_width="@dimen/master_layout_width" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="登录/注册" />
+    </LinearLayout>
+</RelativeLayout>

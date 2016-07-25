@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/kuwo_setting_item">
+            <RelativeLayout android:id="@id/item_listen_quality" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_listen_quality" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_2" android:id="@id/tv_listen_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_select_defualt" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_download_quality" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:id="@id/downloadquality_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_download_quality" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_2" android:ellipsize="marquee" android:gravity="right" android:id="@id/tv_download_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/setting_download_quality_default" android:singleLine="true" android:layout_toRightOf="@id/downloadquality_text" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_download_path" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:id="@id/downloadPath_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_download_path" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_start_music" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_start_music" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_start_music_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_download_at_listening" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_download_at_listening" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_download_at_listen_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/kuwo_setting_item">
+            <RelativeLayout android:id="@id/item_allow_use_3g" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_allow_use_3g" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_allow_use_3g_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_auto_get_big_pic" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_auto_get_big_pic" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_auto_get_big_pic_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/kuwo_setting_item">
+            <RelativeLayout android:id="@id/item_desktop_lrc" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_desktop_lrc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_desktop_lrc_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_kuwo_lockscreen" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_lock_screen" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_lockscreen_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/item_kuwo_backgound_change" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_backgound_change" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_backgound_change_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line_backgound_change" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_kuwo_backgound" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_backgound" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/sb_backgound_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <RelativeLayout android:id="@id/item_ear_phone_control" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center_vertical" android:id="@id/topTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/setting_ear_phone_control" android:layout_toLeftOf="@id/sb_ear_phone_control_splitbutton" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/setting_ear_phone_control_tip" android:layout_toLeftOf="@id/sb_ear_phone_control_splitbutton" android:layout_below="@id/topTextView" android:layout_alignParentLeft="true" />
+                <ToggleButton android:id="@id/sb_ear_phone_control_splitbutton" android:background="@drawable/toggle_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_sleep" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_sleep_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_2" android:id="@id/sleepTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_not_start" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_clean_cache" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_clear_cache" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_check_update" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:id="@id/text_check_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_check_update" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/hasNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/skin_new" android:layout_toRightOf="@id/text_check_update" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_suggestion" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_feedback" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_common_questions" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_common_question" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/list_separator" />
+            <RelativeLayout android:id="@id/item_about" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/kuwo_setting_item">
+                <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_about" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/kuwo_setting_item">
+            <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center" android:id="@id/item_exit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_exit" style="@style/kuwo_setting_item" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

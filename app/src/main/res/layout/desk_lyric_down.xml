@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/desklyric_layout_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/desklyric_downup_width" android:layout_height="@dimen/desklyric_downup_height">
+        <ImageView android:id="@id/bg1" android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_downup_bg_height" android:src="@drawable/desk_lyric_bg" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/bg2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/desk_lyric_bg" android:scaleType="fitXY" />
+        <include android:id="@id/controlLayout" android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_control_height" android:layout_alignParentTop="true" layout="@layout/desk_lyric_control" />
+        <LinearLayout android:orientation="vertical" android:id="@id/upLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_downup_uplayout_height" android:layout_below="@id/controlLayout">
+            <ImageView android:layout_width="fill_parent" android:layout_height="2.0px" android:src="@drawable/desk_lyric_line_h" android:scaleType="fitXY" />
+            <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_downup_setparent_height">
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/desk_lyric_set" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/desklyric_downup_toolparent_height">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_tool_height" android:layout_alignParentBottom="true" layout="@layout/desk_lyric_tool" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

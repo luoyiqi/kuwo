@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="@dimen/dialog_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="60.0dip" android:layout_margin="5.0dip">
+        <EditText android:id="@id/edt_mine_list_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

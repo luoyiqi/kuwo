@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/kuwo_alert_dialog_bkgrnd" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voice_input" android:visibility="visible" android:layout_width="300.0dip" android:layout_height="fill_parent">
+        <include android:id="@id/qianyu_voice_input_title_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/qianyu_voice_input_title_panel" />
+        <include android:layout_gravity="fill" android:id="@id/qianyu_voice_input_main_panel" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_weight="1.0" layout="@layout/qianyu_voice_input_main_panel" />
+        <include android:id="@id/qianyu_voice_input_noinit_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/qianyu_voice_input_noinit_panel" />
+        <include android:layout_gravity="fill" android:id="@id/qianyu_voice_input_list_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/qianyu_voice_input_list_panel" />
+        <include android:id="@id/qianyu_voice_input_menu_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/qianyu_voice_input_menu_panel" />
+    </LinearLayout>
+</LinearLayout>

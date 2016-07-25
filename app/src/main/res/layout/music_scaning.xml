@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/music_scaning_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/progress_image" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_percent" android:background="@drawable/scanning_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="0%" android:layout_below="@id/progress_image" />
+    <ProgressBar android:id="@id/musicprogress" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="9.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="4.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/player_seekbar_style" android:layout_below="@id/tv_percent" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_scan_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_below="@id/musicprogress">
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_state_left" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff19bbef" android:id="@id/tv_scan_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="0" />
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_state_right" />
+    </LinearLayout>
+</RelativeLayout>

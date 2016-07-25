@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/quku_recommend_title_backgroundcolor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/dialog_title" android:gravity="center_vertical" android:id="@id/title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/dialog_title" android:gravity="center_vertical" android:id="@id/more" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多 >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <cn.kuwo.ui.widget.FixedSizeGridView android:id="@id/recommend_grid" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="@dimen/gridview_verticalspacing" android:verticalSpacing="@dimen/gridview_verticalspacing" android:stretchMode="columnWidth" android:numColumns="@integer/gridview_columns" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_panel" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/retry_panel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@drawable/voice_text_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voicesearch_tipStr" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/err_panel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:gravity="center" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/bg_blank" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/record_panel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:gravity="center" android:id="@id/anim_image" android:layout_width="38.0dip" android:layout_height="51.0dip" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/process_panel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:gravity="center" android:id="@id/progress_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kuwo_alert_waiting_animation" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@drawable/voice_help_color" android:gravity="center" android:id="@id/help_info" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/voicesearch_inputStr" />
+</LinearLayout>

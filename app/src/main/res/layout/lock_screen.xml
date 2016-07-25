@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:uilib="http://schemas.android.com/apk/res/cn.kuwo.kwmusiccar">
+    <cn.kuwo.base.uilib.KwImageView android:id="@id/lockscreen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="#4c000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <cn.kuwo.ui.lockscreen.LockScreenClock android:id="@id/lock_screen_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lockscreen_lockclock_padding" android:layout_marginTop="@dimen/lockscreen_lockclock_padding" android:layout_alignParentLeft="true">
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/hour_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textColor="@color/white" android:id="@id/date_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="-5.0dip" android:layout_below="@id/hour_minute" android:layout_alignParentLeft="true" />
+    </cn.kuwo.ui.lockscreen.LockScreenClock>
+    <View android:id="@id/lock_screen_line" android:background="@android:color/white" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/lockscreen_lockclock_padding" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/lock_screen_clock" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/time_artist" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lockscreen_lockclock_padding" android:layout_below="@id/lock_screen_line" android:layout_alignParentLeft="true">
+        <cn.kuwo.base.uilib.KuwoTextView android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="left" android:id="@id/song" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:text="@string/main_titletip" android:singleLine="true" />
+        <cn.kuwo.base.uilib.KuwoTextView android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="left" android:id="@id/artist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_artisttip" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+    <cn.kuwo.ui.lockscreen.SliderRelativeLayout android:gravity="center_vertical" android:id="@id/slider_layout" android:paddingLeft="@dimen/lockscreen_sliderlayout_padding" android:paddingTop="@dimen/lockscreen_lockclock_padding" android:paddingBottom="@dimen/lockscreen_lockclock_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/lockscreen_sliderlayout_padding" android:layout_alignParentBottom="true">
+        <cn.kuwo.base.uilib.KwImageView android:id="@id/slider_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" uilib:bkimage="lock_bright" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/slider_icon" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="18.0sp" android:textColor="#66ffffff" android:gravity="center_horizontal" android:id="@id/slider_unlock_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slider_unlock_desc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <cn.kuwo.base.uilib.KwImageView android:id="@id/getup_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/slider_unlock_desc" android:layout_centerVertical="true" uilib:bkimage="slider_track1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </cn.kuwo.ui.lockscreen.SliderRelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/player_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/slider_layout" android:layout_centerVertical="true">
+        <cn.kuwo.base.uilib.KwImageView android:id="@id/play_play" android:layout_width="@dimen/playctlbar_musicplay_size" android:layout_height="@dimen/playctlbar_musicplay_size" android:layout_centerInParent="true" uilib:statusimage="player_btn_play" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/play_play" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <cn.kuwo.base.uilib.KwImageView android:id="@id/play_pre" android:layout_width="@dimen/playctlbar_musicpre_size" android:layout_height="@dimen/playctlbar_musicpre_size" android:layout_centerInParent="true" uilib:statusimage="player_btn_pre" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/play_play" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <cn.kuwo.base.uilib.KwImageView android:id="@id/play_nxt" android:layout_width="@dimen/playctlbar_musicpre_size" android:layout_height="@dimen/playctlbar_musicpre_size" android:layout_centerInParent="true" uilib:statusimage="player_btn_nxt" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

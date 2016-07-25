@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/button_group" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/buttom_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/dialog_title_text" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_group" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/buttom_color" android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/button_positive" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:id="@id/neutral_separators" android:background="@drawable/separator_blue" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/button_neutral" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:id="@id/negative_separators" android:background="@drawable/separator_blue" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/button_negative" android:background="#00ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/buttom_color" android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" />
+    </LinearLayout>
+    <ImageView android:id="@id/buttom_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/dialog_title_text" />
+</LinearLayout>

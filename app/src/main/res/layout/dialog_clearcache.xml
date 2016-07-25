@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_content_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_content_height" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/cb_search_history_cache" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/setting_search_history_cache" android:drawableRight="@drawable/checkbox_style" />
+            <CheckBox android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/cb_lyric_cache" android:background="#ffededed" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/setting_lyric_cache" android:drawableRight="@drawable/checkbox_style" />
+            <CheckBox android:textSize="@dimen/dialog_content_textsize" android:textColor="#ff000000" android:id="@id/cb_pic_cache" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/setting_pic_cache" android:drawableRight="@drawable/checkbox_style" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rl_button_cache" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/tv_line_cache" android:background="#ff0eb5fb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:id="@id/bt_yes_cache" android:background="#fff7f4f4" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/alert_ok" android:layout_below="@id/tv_line_cache" />
+    </RelativeLayout>
+</RelativeLayout>

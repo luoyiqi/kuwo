@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/layout_input" android:background="@drawable/list_frame" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/local_login_text_default" android:gravity="center" android:id="@id/register_tv_phone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/c_tel" android:layout_alignParentLeft="true" />
+        <EditText android:textSize="@dimen/local_sub_textsize" android:textColorHint="@color/local_login_light_black" android:id="@id/register_et_phone" android:background="@drawable/local_login_et_style" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="30.0dip" android:hint="@string/r_def_tel" android:singleLine="true" android:layout_toRightOf="@id/register_tv_phone" android:layout_centerVertical="true" android:inputType="phone" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/reg_clear_phone" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:background="@drawable/close_login_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" />
+        </RelativeLayout>
+        <TextView android:id="@id/reg_phone_err_tip" android:background="@drawable/pop_login" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/register_get_vercode" android:background="@drawable/btn_reg_login_selector" android:layout_width="186.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/layout_input" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_vertical" android:id="@id/text_reg_getvercode_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/r_get_vercode" android:layout_centerInParent="true" style="@style/logreg_btn_white" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white50" android:gravity="bottom" android:id="@id/reg_phone_err_notice" android:background="@drawable/local_login_tip" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginRight="42.0dip" android:text="@string/r_def_tel" android:layout_alignRight="@id/layout_input" />
+</RelativeLayout>

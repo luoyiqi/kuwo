@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btnSelectDownloadPath" android:layout_alignParentTop="true">
+        <ListView android:orientation="vertical" android:id="@id/dir_list" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/bg_setting_item" android:cacheColorHint="#00000000" android:divider="@color/dialog_title_text" android:dividerHeight="1.0dip" />
+    </RadioGroup>
+    <TextView android:textSize="@dimen/dialog_content_textsize" android:textColor="@color/list_item_1" android:gravity="center" android:id="@id/no_music" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_media_file" android:layout_above="@id/btnSelectDownloadPath" android:layout_below="@id/radioGroup" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/btnSelectDownloadPath" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/buttom_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/dialog_title_text" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/letf" android:layout_width="1.0dip" android:layout_height="40.0dip" android:src="@color/dialog_title_text" android:layout_alignParentLeft="true" />
+        <View android:layout_gravity="center_vertical" android:id="@id/neutral_separators" android:background="@drawable/separator_blue" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <View android:layout_gravity="center_vertical" android:id="@id/neutral_center" android:background="@drawable/separator_blue" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/button_positive" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="设为下载目录" android:layout_toLeftOf="@id/neutral_center" android:layout_toRightOf="@id/letf" android:layout_below="@id/buttom_color" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="@color/kuwo_alert_dialog_button_text_color" android:id="@id/button_negative" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="新建文件夹" android:layout_toLeftOf="@id/neutral_separators" android:layout_toRightOf="@id/neutral_center" android:layout_below="@id/buttom_color" />
+    </RelativeLayout>
+</RelativeLayout>

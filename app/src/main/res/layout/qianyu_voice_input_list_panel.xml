@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_panel" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#ffcceaff" android:cacheColorHint="@color/transparent" android:divider="@color/download_divider" android:layout_weight="1.0" />
+    <TextView android:textColor="@drawable/text_color" android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No result!" />
+</LinearLayout>

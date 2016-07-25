@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="type_transparent">#00ffffff</item>
+    <item type="drawable" name="search_title_color">#ff404e59</item>
+    <item type="drawable" name="search_text_color">#ff7a8a97</item>
+    <item type="drawable" name="search_helper_color">#ff480101</item>
+    <item type="drawable" name="text_color">#ffffffff</item>
+    <item type="drawable" name="voice_text_color">#ff666666</item>
+    <item type="drawable" name="voice_help_color">#ff666666</item>
+</resources>

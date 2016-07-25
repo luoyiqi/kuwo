@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="device_size">1</integer>
+    <integer name="lyric_textSize">22</integer>
+    <integer name="topbar_skin_popwindow_width">300</integer>
+    <integer name="topbar_skin_popwindow_minusheight">140</integer>
+    <integer name="topbar_skin_popwindow_offx">260</integer>
+    <integer name="topbar_setting_popwindow_width">100</integer>
+    <integer name="topbar_setting_popwindow_offx">60</integer>
+    <integer name="left_search_iconsize">32</integer>
+    <integer name="local_main_textsize">16</integer>
+    <integer name="gridview_columns">3</integer>
+    <integer name="mv_columns">2</integer>
+    <integer name="playctlbar_songlist_popwindow_width">320</integer>
+</resources>

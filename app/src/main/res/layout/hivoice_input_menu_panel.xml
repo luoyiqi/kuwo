@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/menu" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|right|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/voice_text_color" android:layout_gravity="bottom" android:paddingTop="2.0dip" android:paddingRight="27.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voicesearch_company" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/record_finish" android:background="@drawable/btn_kuwo_alert_dialog_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="说完了" android:maxLines="2" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/retry_record" android:background="@drawable/btn_kuwo_alert_dialog_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="再来一遍" android:maxLines="2" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="#ff333333" android:layout_gravity="right" android:id="@id/cancel" android:background="@drawable/btn_kuwo_alert_dialog_gray" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="取消" android:maxLines="2" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/dialog_button_textsize" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/cancel_only" android:background="@drawable/btn_kuwo_alert_dialog_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="取消" android:maxLines="2" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

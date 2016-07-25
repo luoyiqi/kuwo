@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_tool_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lock_layout" android:layout_width="@dimen/desklyric_control_bothends_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/lock" android:layout_width="@dimen/desklyric_control_button_size" android:layout_height="@dimen/desklyric_control_button_size" android:src="@drawable/desk_lrc_btn_lock" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gone_layout" android:layout_width="@dimen/desklyric_control_bothends_width" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/gone" android:layout_width="@dimen/desklyric_control_button_size" android:layout_height="@dimen/desklyric_control_button_size" android:src="@drawable/desk_lrc_btn_close" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/desk_lrc_tsize_bg" android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_tool_height" android:weightSum="3.0" android:layout_toLeftOf="@id/gone_layout" android:layout_toRightOf="@id/lock_layout">
+        <RelativeLayout android:id="@id/text_size_big" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/desklyric_tool_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_big" android:layout_width="@dimen/desklyric_tool_text_width" android:layout_height="fill_parent" android:text="大" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="2.0px" android:layout_height="fill_parent" android:src="@drawable/desk_lyric_line_c_small" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/text_size_default" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/desklyric_tool_textsize" android:textColor="@color/desk_lyric_tsize" android:gravity="center" android:id="@id/tv_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="中" />
+        </RelativeLayout>
+        <ImageView android:layout_width="2.0px" android:layout_height="fill_parent" android:src="@drawable/desk_lyric_line_c_small" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/text_size_small" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/desklyric_tool_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_small" android:layout_width="@dimen/desklyric_tool_text_width" android:layout_height="fill_parent" android:text="小" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

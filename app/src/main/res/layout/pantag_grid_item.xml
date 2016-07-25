@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/grid_bg" android:background="@drawable/btn_login_selector" android:layout_width="@dimen/griditem_layout_width" android:layout_height="@dimen/griditem_layout_width">
+        <ImageView android:id="@id/grid_image" android:layout_width="@dimen/griditem_pantag_width" android:layout_height="@dimen/griditem_pantag_height" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/local_main_textsize" android:textColor="@color/white" android:id="@id/grid_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abc" android:maxLines="1" android:singleLine="true" android:layout_below="@id/grid_image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

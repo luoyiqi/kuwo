@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/dialog_fragment_header" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dialog_content_height" android:layout_below="@id/top">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom" android:layout_alignParentTop="true">
+            <include layout="@layout/dialog_fragment_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/buttom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/dialog_fragment_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

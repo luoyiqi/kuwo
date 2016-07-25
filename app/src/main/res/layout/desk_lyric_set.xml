@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal" android:layout_width="@dimen/desklyric_set_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_pink" android:background="@drawable/desk_lrc_radio_pink" android:layout_width="@dimen/desklyric_set_button_size" android:layout_height="@dimen/desklyric_set_button_size" android:button="@null" />
+    <RadioButton android:id="@id/radio_orange" android:background="@drawable/desk_lrc_radio_orange" android:layout_width="@dimen/desklyric_set_button_size" android:layout_height="@dimen/desklyric_set_button_size" android:layout_marginLeft="@dimen/desklyric_set_button_padding" android:button="@null" />
+    <RadioButton android:id="@id/radio_blue" android:background="@drawable/desk_lrc_radio_blue" android:layout_width="@dimen/desklyric_set_button_size" android:layout_height="@dimen/desklyric_set_button_size" android:layout_marginLeft="@dimen/desklyric_set_button_padding" android:button="@null" />
+    <RadioButton android:id="@id/radio_green" android:background="@drawable/desk_lrc_radio_green" android:layout_width="@dimen/desklyric_set_button_size" android:layout_height="@dimen/desklyric_set_button_size" android:layout_marginLeft="@dimen/desklyric_set_button_padding" android:button="@null" />
+    <RadioButton android:id="@id/radio_purple" android:background="@drawable/desk_lrc_radio_purple" android:layout_width="@dimen/desklyric_set_button_size" android:layout_height="@dimen/desklyric_set_button_size" android:layout_marginLeft="@dimen/desklyric_set_button_padding" android:button="@null" />
+</RadioGroup>

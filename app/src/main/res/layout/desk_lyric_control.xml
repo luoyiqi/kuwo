@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/desklyric_control_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/openBtn" android:layout_width="@dimen/desklyric_control_bothends_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/open" android:layout_width="@dimen/desklyric_control_button_size" android:layout_height="@dimen/desklyric_control_button_size" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/gotoKW" android:layout_width="@dimen/desklyric_control_bothends_width" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="@dimen/desklyric_control_button_size" android:layout_height="@dimen/desklyric_control_button_size" android:src="@drawable/desk_lrc_btn_go_kw" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/controlLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_toLeftOf="@id/gotoKW" android:layout_toRightOf="@id/openBtn">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/preBtn" android:layout_width="0.0dip" android:layout_height="@dimen/desklyric_control_button_size" android:src="@drawable/desk_lrc_btn_pre" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pauBtn" android:layout_width="0.0dip" android:layout_height="@dimen/desklyric_control_play_size" android:src="@drawable/desk_lyric_player_play" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/nexBtn" android:layout_width="0.0dip" android:layout_height="@dimen/desklyric_control_button_size" android:src="@drawable/desk_lrc_btn_next" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

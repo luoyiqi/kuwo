@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/musiclist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/musiclist_divider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dialog_title_about_icon" android:background="@drawable/kuwo_alert_dialog_title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignBottom="@id/tv_about_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="#ff00b6ef" android:id="@id/tv_about_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/about_title" android:layout_toRightOf="@id/dialog_title_about_icon" android:layout_centerVertical="true" />
+        <Button android:id="@id/bt_about_cancel" android:background="@drawable/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

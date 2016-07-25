@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/toast_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:background="@drawable/toast_tips_backgroud" android:layout_width="wrap_content" android:layout_height="170.0dip" android:minWidth="200.0dip">
+        <ImageView android:id="@id/iv_toast_pic" android:background="@drawable/toast_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/tv_toast_tips" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1424" android:layout_below="@id/iv_toast_pic" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/progress_volume" android:background="@null" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/volume_progress_layer" android:minWidth="120.0dip" android:layout_below="@id/iv_toast_pic" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>
